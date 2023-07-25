@@ -2,7 +2,7 @@ name: "Code Scanning"
 
 on:
   schedule:
-    - cron: '08 08 * * *'
+    - cron: '15 08 * * *'
 
 jobs:
   analyze:
@@ -20,7 +20,6 @@ jobs:
         language: [ 'javascript' ]
 
     steps:
-    - uses: actions/checkout@master
     - name: Checkout repository
       uses: actions/checkout@v3
 
