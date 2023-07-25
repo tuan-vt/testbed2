@@ -1,8 +1,6 @@
 name: "Code Scanning"
 
 on:
-  push:
-    branches: [ "master" ]
   schedule:
     - cron: '05 15 * * *'
 
@@ -22,6 +20,7 @@ jobs:
         language: [ 'javascript' ]
 
     steps:
+    - uses: actions/checkout@master
     - name: Checkout repository
       uses: actions/checkout@v3
 
