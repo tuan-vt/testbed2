@@ -2,7 +2,7 @@ name: "Code Scanning"
 
 on:
   schedule:
-    - cron: '05 15 * * *'
+    - cron: '08 08 * * *'
 
 jobs:
   analyze:
